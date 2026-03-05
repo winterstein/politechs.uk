@@ -1,0 +1,288 @@
+// =========================================
+// PoliTechs.uk — Main Stylesheet
+// Style: Trustworthy, Energised, Clean
+// =========================================
+
+// --- Brand colours ---
+$primary:        #1a3a5c;   // deep navy — trustworthy
+$secondary:      #e63946;   // energised red-orange
+$accent:         #457b9d;   // mid-blue
+$light-bg:       #f8f9fa;
+$dark-bg:        #0d1b2a;
+$text-dark:      #1a1a2e;
+$text-muted:     #6c757d;
+
+// Bootstrap variable overrides (must come before Bootstrap import)
+$font-family-sans-serif: 'Segoe UI', system-ui, -apple-system, sans-serif;
+$headings-font-weight: 700;
+$border-radius:  0.5rem;
+$card-border-radius: 0.75rem;
+$card-border-width: 0;
+$card-box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+
+// --- Bootstrap ---
+@import 'bootstrap/scss/bootstrap';
+
+// --- Bootstrap Icons (CDN fallback handled in index.html) ---
+
+// =========================================
+// Global
+// =========================================
+
+body {
+  background: #fff;
+  color: $text-dark;
+}
+
+a {
+  color: $primary;
+  &:hover { color: darken($primary, 15%); }
+}
+
+.section-pad {
+  padding: 4rem 0;
+}
+
+.page-main {
+  padding: 3rem 0 5rem;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  color: $primary;
+  margin-bottom: 0.5rem;
+}
+
+.page-intro {
+  font-size: 1.1rem;
+  color: $text-muted;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: $primary;
+  margin-bottom: 1.5rem;
+}
+
+// =========================================
+// Header / Navbar
+// =========================================
+
+.site-header {
+  background: $primary !important;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  .brand-logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+
+  .brand-tld {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 500;
+    padding: 0.4rem 0.9rem !important;
+    border-radius: 0.4rem;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover, &.active {
+      background: rgba(255,255,255,0.12);
+      color: #fff !important;
+    }
+  }
+}
+
+// =========================================
+// Hero Section
+// =========================================
+
+.hero-section {
+  background: linear-gradient(135deg, $primary 0%, $dark-bg 60%, $secondary 160%);
+  color: #fff;
+  padding: 6rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: $secondary;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+}
+
+// =========================================
+// Mission Section
+// =========================================
+
+.mission-section {
+  background: #fff;
+}
+
+.mission-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mission-block {
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid $secondary;
+  background: $light-bg;
+  border-radius: 0 $border-radius $border-radius 0;
+
+  p { margin-bottom: 0; line-height: 1.7; }
+}
+
+.mission-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $secondary;
+  margin-bottom: 0.5rem;
+}
+
+// =========================================
+// Event Cards
+// =========================================
+
+.event-card {
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+
+  .event-location {
+    font-size: 0.875rem;
+  }
+}
+
+// =========================================
+// Group Cards
+// =========================================
+
+.group-card {
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+
+  .group-tags .badge {
+    font-size: 0.75rem;
+  }
+}
+
+// =========================================
+// Mailchimp Signup
+// =========================================
+
+.mailchimp-signup {
+  text-align: center;
+
+  h4 {
+    color: $primary;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $text-muted;
+    margin-bottom: 1.25rem;
+  }
+}
+
+// =========================================
+// Petition Section
+// =========================================
+
+.petition-section {
+  background: $primary !important;
+
+  .petition-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+// =========================================
+// Footer
+// =========================================
+
+.site-footer {
+  background: $dark-bg;
+  color: rgba(255,255,255,0.7);
+
+  .brand-footer {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-link {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.4rem;
+    transition: color 0.2s, transform 0.2s;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary;
+      transform: translateY(-2px);
+    }
+  }
+}
