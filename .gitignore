@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Eleventy output
+_site/
+
+# Compiled CSS (generated from SCSS)
+css/
+
 nohup.out
 
 # Editor directories and files

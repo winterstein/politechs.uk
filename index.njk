@@ -1,0 +1,123 @@
+---
+layout: base.njk
+title: PoliTechs.uk — Politics meets Technology
+---
+{% from "event-card.njk" import eventCard %}
+
+<main>
+  {# Hero #}
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Politics meets Technology.</h1>
+        <p class="hero-subtitle">
+          Britain faces profound challenges — from the climate crisis to inequality, from broken public services
+          to the rise of AI. The answers lie at the intersection of <strong>politics and technology</strong>.
+        </p>
+        <div class="hero-cta d-flex gap-3 flex-wrap">
+          <a href="/events/" class="btn btn-primary btn-lg">Upcoming Events</a>
+          <a href="#petition" class="btn btn-outline-light btn-lg">Sign the Petition</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Mission #}
+  <section class="mission-section section-pad">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <h2 class="section-title text-center">Our Mission</h2>
+          <div class="mission-blocks">
+            <div class="mission-block">
+              <h3 class="mission-label">The Problem</h3>
+              <p>
+                Politics and technology are shaping each other at speed — yet they operate in silos. Policymakers
+                lack technical literacy. Technologists lack civic engagement. The result? Legislation that lags
+                reality, tech that erodes democracy, and society left behind.
+              </p>
+            </div>
+            <div class="mission-block">
+              <h3 class="mission-label">Our Method</h3>
+              <p>
+                We connect people who work at the intersection of politics and technology — through events,
+                conversations, and collaborative projects. We raise the debate on the key issues: AI governance,
+                digital rights, open data, and civic tech.
+              </p>
+            </div>
+            <div class="mission-block">
+              <h3 class="mission-label">Our Goal</h3>
+              <p>
+                A society where technology serves the many, not the few — where democratic values shape the
+                digital world, and where Britain leads the way in responsible, human-centred innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Upcoming Events #}
+  <section class="events-preview-section section-pad bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Upcoming Events</h2>
+      <div class="row g-4">
+      {% for event in events %}
+      {% if loop.index0 < 2 %}
+        <div class="col-md-6">
+          {{ eventCard(event) }}
+        </div>
+      {% endif %}
+      {% endfor %}
+      </div>
+      <div class="text-center mt-4">
+        <a href="/events/" class="btn btn-outline-primary">See all events</a>
+      </div>
+    </div>
+  </section>
+
+  {# Mailing List #}
+  <section class="signup-section section-pad">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="mailchimp-signup">
+            <h4>Stay informed</h4>
+            <p>Join our mailing list for event updates, policy briefs, and opportunities to get involved.</p>
+            <form action="https://politechs.us1.list-manage.com/subscribe/post?u=PLACEHOLDER&amp;id=PLACEHOLDER" method="post" target="_blank">
+              <div class="d-flex gap-2 flex-wrap">
+                <label for="mce-EMAIL" class="visually-hidden">Email address</label>
+                <input type="email" id="mce-EMAIL" name="EMAIL" placeholder="Your email address" required class="form-control flex-grow-1" />
+                {# Mailchimp honeypot — replace with actual value from your embed code #}
+                <div style="position:absolute;left:-5000px" aria-hidden="true">
+                  <input type="text" name="b_PLACEHOLDER_PLACEHOLDER" tabindex="-1" value="" />
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Petition #}
+  <section id="petition" class="petition-section section-pad bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8">
+          <h2 class="mb-3">Take Action: Sign the Petition</h2>
+          <p class="petition-text mb-4">
+            We're calling on Parliament to establish a cross-party <strong>Technology &amp; Democracy Commission</strong> —
+            bringing together tech leaders, civic society, and elected representatives to shape a digital future
+            that works for everyone.
+          </p>
+          <a href="https://petition.parliament.uk" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg">
+            Sign the Petition
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

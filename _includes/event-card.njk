@@ -1,0 +1,17 @@
+{% macro eventCard(event) %}
+<div class="card event-card h-100">
+  <div class="card-body d-flex flex-column">
+    <div class="event-date-badge mb-2">
+      <span class="badge rounded-pill bg-primary">{{ event.date | formatDate }} &middot; {{ event.time }}</span>
+    </div>
+    <h5 class="card-title">{{ event.title }}</h5>
+    <p class="event-location text-muted small mb-2">
+      <i class="bi bi-geo-alt-fill me-1"></i>{{ event.location }}
+    </p>
+    <p class="card-text flex-grow-1">{{ event.description }}</p>
+    <a href="{{ event.rsvpUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-auto align-self-start">
+      RSVP &rarr;
+    </a>
+  </div>
+</div>
+{% endmacro %}
