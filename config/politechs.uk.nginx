@@ -16,7 +16,7 @@ server {
 	listen 443 ssl http2;
 	listen [::]:443 ssl http2;
 
-	root /home/winterwell/politechs.uk/public;
+	root /opt/politechs.uk/website/webroot;
 	index index.html;
 
     expires $expires;
