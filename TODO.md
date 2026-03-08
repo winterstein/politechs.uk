@@ -14,10 +14,8 @@
 
 - [ ] Set up Mailchimp account and replace placeholder URL in `MailchimpSignup.jsx`
 - [ ] Create social media accounts (LinkedIn, Facebook, X) and update URLs in `Footer.jsx`
-- [ ] Add a real petition link (e.g. change.org or Parliament petition) in `Landing.jsx`
 - [ ] Add a PoliTechs logo / favicon
-- [ ] Add event registration form (Eventbrite or similar)
-- [ ] Add Google Analytics / Plausible analytics
+- [ ] Add analytics (is there a free non-big-tech provider?)
 
 ## Medium Term
 

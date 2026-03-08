@@ -4,15 +4,15 @@ export default [
     name: 'National Conversations',
     url: 'https://nationalconversations.org/',
     description:
-      'Bringing together citizens across the UK to deliberate on the issues that matter most — from the economy to the environment. A platform for structured, evidence-based national dialogue.',
+      'Practitioner-led movement to put digital technology at the heart of political life in Scotland and Wales. A joint initiative of Transform Wales and Foundations of the Digital State, raising digital-policy questions in elections and delivering practical resources to new MSPs and Senedd members.',
     tags: ['Democracy', 'Civic Engagement', 'Dialogue'],
   },
   {
     id: 2,
-    name: 'Aished',
+    name: 'AI Safety Hub Edinburgh',
     url: 'https://aished.org/',
     description:
-      'An organisation focused on the intersection of AI, Society, Health, Education and Democracy — working to ensure technology serves the public good and reduces inequality.',
+      'Edinburgh-based community ensuring AI development benefits humanity’s long-term future. Runs weekly discussions, introductory courses, and speaker events; helps members gain skills and contribute to AI safety and alignment research.',
     tags: ['AI', 'Society', 'Policy'],
   },
   {
@@ -20,15 +20,7 @@ export default [
     name: 'mySociety',
     url: 'https://www.mysociety.org/',
     description:
-      'The UK charity that builds digital tools empowering people to be active citizens — from contacting MPs to scrutinising public spending.',
+      'UK charity that creates digital services to break down barriers to democratic participation. Runs WhatDoTheyKnow, FixMyStreet, TheyWorkForYou and WriteToThem; focuses on transparency, democracy, community and climate.',
     tags: ['Civic Tech', 'Open Data', 'Democracy'],
-  },
-  {
-    id: 4,
-    name: 'Nesta',
-    url: 'https://www.nesta.org.uk/',
-    description:
-      'An innovation foundation working to create a fairer future by changing systems — including public services, technology, and democratic participation.',
-    tags: ['Innovation', 'Policy', 'Public Services'],
   },
 ];

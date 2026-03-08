@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build:css": "sass src/styles/main.scss css/main.css --load-path=node_modules",
+    "build:css": "sass styles/main.scss css/main.css --load-path=node_modules",
     "build": "npm run build:css && eleventy",
     "start": "npm run build:css && eleventy --serve",
-    "watch:css": "sass --watch src/styles/main.scss css/main.css --load-path=node_modules",
+    "watch:css": "sass --watch styles/main.scss css/main.css --load-path=node_modules",
     "dev": "concurrently \"npm run watch:css\" \"eleventy --serve\""
   },
   "dependencies": {
