@@ -3,7 +3,14 @@ name: Deploy Website
 on:
   push:
     paths:
-      - 'website/**'
+      - 'src/**'
+      - '_includes/**'
+      - '_data/**'
+      - 'public/**'
+      - 'css/**'
+      - '*.md'
+      - '.eleventy.js'
+      - 'package.json'
       - '.github/workflows/website-deploy.yml'
   workflow_dispatch:
 
@@ -26,50 +33,18 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install LESS compiler
-        run: npm install -g less
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Verify website directory exists
-        run: |
-          pwd
-          ls -la
-          if [ ! -d "website" ]; then
-            echo "Warning: website directory not found, listing all directories:"
-            find . -maxdepth 2 -type d | head -20
-            exit 1
-          fi
-          echo "Website directory found, contents:"
-          ls -la website/
+      - name: Build website (SASS + Eleventy)
+        run: npm run build
 
-      - name: Install website dependencies
-        working-directory: ./website
+      - name: Verify build output
         run: |
-          if [ -f "package.json" ]; then
-            npm install
-          else
-            echo "Error: package.json not found in website directory"
-            exit 1
-          fi
-          
-      - name: Copy common files from webapp to website
-        working-directory: ./website
-        run: |
-          cp -r ../webapp/public/common webroot/common
-
-      - name: Compile LESS to CSS
-        working-directory: ./website
-        run: |
-          mkdir -p webroot/style
-          lessc style/main.less webroot/style/main.css
-
-      - name: Build website with Eleventy
-        working-directory: ./website
-        run: |
-          npm run build
-          echo "Build complete, verifying output:"
-          ls -la webroot/ | head -20
-          if [ ! -f "webroot/index.html" ]; then
-            echo "Error: index.html not found after build"
+          echo "Build output:"
+          ls -la _site/ | head -20
+          if [ ! -f "_site/index.html" ]; then
+            echo "Error: index.html not found in _site after build"
             exit 1
           fi
 
@@ -80,7 +55,7 @@ jobs:
           username: ${{ env.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           port: ${{ env.DEPLOY_PORT }}
-          source: "website/webroot"
+          source: "_site"
           target: "/opt/aiqa/website-staging"
           strip_components: 1
 
@@ -92,38 +67,35 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           port: ${{ env.DEPLOY_PORT }}
           script: |
-            # Verify staging deployment has index.html (11ty output)
-            # With strip_components: 1, webroot directory is copied to staging
-            if [ ! -f "/opt/aiqa/website-staging/webroot/index.html" ]; then
+            # Verify staging has index.html (Eleventy output; strip_components puts _site contents in staging)
+            if [ ! -f "/opt/aiqa/website-staging/index.html" ]; then
               echo "Error: index.html not found in staging deployment"
               exit 1
             fi
-            
+
             # Create backup of current deployment (if it exists)
             if [ -d "/opt/aiqa/website/webroot" ]; then
               sudo mv /opt/aiqa/website/webroot /opt/aiqa/website/webroot.backup.$(date +%s)
             fi
-            
-            # Atomically swap staging to production
+
+            # Atomically swap staging to production (staging dir becomes webroot)
             sudo mkdir -p /opt/aiqa/website
-            sudo mv /opt/aiqa/website-staging/webroot /opt/aiqa/website/webroot
-            # Clean up empty staging directory
-            sudo rmdir /opt/aiqa/website-staging 2>/dev/null || true
+            sudo mv /opt/aiqa/website-staging /opt/aiqa/website/webroot
             sudo chown -R www-data:www-data /opt/aiqa/website/webroot
-            
+
             # Verify production deployment
             if [ ! -f "/opt/aiqa/website/webroot/index.html" ]; then
               echo "Error: index.html not found after swap, restoring backup"
-              if [ -d "/opt/aiqa/website/webroot.backup."* ]; then
+              if [ -d /opt/aiqa/website/webroot.backup.* ]; then
                 sudo rm -rf /opt/aiqa/website/webroot
                 sudo mv /opt/aiqa/website/webroot.backup.* /opt/aiqa/website/webroot
               fi
               exit 1
             fi
-            
+
             # Clean up old backups (keep last 3)
             ls -td /opt/aiqa/website/webroot.backup.* 2>/dev/null | tail -n +4 | xargs -r sudo rm -rf
-            
+
             echo "Deployment successful"
             ls -la /opt/aiqa/website/webroot/ | head -20
 
