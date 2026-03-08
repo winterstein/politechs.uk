@@ -56,7 +56,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           port: ${{ env.DEPLOY_PORT }}
           source: "_site"
-          target: "/opt/aiqa/website-staging"
+          target: "/opt/politechs.uk/website-staging"
           strip_components: 1
 
       - name: Verify and swap deployment
@@ -68,36 +68,36 @@ jobs:
           port: ${{ env.DEPLOY_PORT }}
           script: |
             # Verify staging has index.html (Eleventy output; strip_components puts _site contents in staging)
-            if [ ! -f "/opt/aiqa/website-staging/index.html" ]; then
+            if [ ! -f "/opt/politechs.uk/website-staging/index.html" ]; then
               echo "Error: index.html not found in staging deployment"
               exit 1
             fi
 
             # Create backup of current deployment (if it exists)
-            if [ -d "/opt/aiqa/website/webroot" ]; then
-              sudo mv /opt/aiqa/website/webroot /opt/aiqa/website/webroot.backup.$(date +%s)
+            if [ -d "/opt/politechs.uk/website/webroot" ]; then
+              sudo mv /opt/politechs.uk/website/webroot /opt/politechs.uk/website/webroot.backup.$(date +%s)
             fi
 
             # Atomically swap staging to production (staging dir becomes webroot)
-            sudo mkdir -p /opt/aiqa/website
-            sudo mv /opt/aiqa/website-staging /opt/aiqa/website/webroot
-            sudo chown -R www-data:www-data /opt/aiqa/website/webroot
+            sudo mkdir -p /opt/politechs.uk/website
+            sudo mv /opt/politechs.uk/website-staging /opt/politechs.uk/website/webroot
+            sudo chown -R www-data:www-data /opt/politechs.uk/website/webroot
 
             # Verify production deployment
-            if [ ! -f "/opt/aiqa/website/webroot/index.html" ]; then
+            if [ ! -f "/opt/politechs.uk/website/webroot/index.html" ]; then
               echo "Error: index.html not found after swap, restoring backup"
-              if [ -d /opt/aiqa/website/webroot.backup.* ]; then
-                sudo rm -rf /opt/aiqa/website/webroot
-                sudo mv /opt/aiqa/website/webroot.backup.* /opt/aiqa/website/webroot
+              if [ -d /opt/politechs.uk/website/webroot.backup.* ]; then
+                sudo rm -rf /opt/politechs.uk/website/webroot
+                sudo mv /opt/politechs.uk/website/webroot.backup.* /opt/politechs.uk/website/webroot
               fi
               exit 1
             fi
 
             # Clean up old backups (keep last 3)
-            ls -td /opt/aiqa/website/webroot.backup.* 2>/dev/null | tail -n +4 | xargs -r sudo rm -rf
+            ls -td /opt/politechs.uk/website/webroot.backup.* 2>/dev/null | tail -n +4 | xargs -r sudo rm -rf
 
             echo "Deployment successful"
-            ls -la /opt/aiqa/website/webroot/ | head -20
+            ls -la /opt/politechs.uk/website/webroot/ | head -20
 
       - name: Restart nginx
         uses: appleboy/ssh-action@v1.0.3
