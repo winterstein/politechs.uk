@@ -1,22 +1,26 @@
 export default [
   {
     id: 1,
-    title: 'Tech & Democracy: Can AI Save Politics?',
+    title: 'Election Hustings on Digital Tech / AI (Society & Media theme)',
     date: '2026-03-08',
     time: '18:30',
     location: 'Glasgow, UK',
     description:
-      'Join us for an evening exploring how artificial intelligence is reshaping democratic processes, from disinformation detection to policy modelling. Speakers from Parliament, academia, and the tech sector.',
+      `How is artificial intelligence reshaping society and the media—and what should we do about it? This Scottish Parliament election hustings is a chance to put those questions directly to the people seeking your vote.
+
+The event will bring together politicians and experts to discuss disinformation, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place.`,
     rsvpUrl: 'https://luma.com/px4pzlsh',
   },
   {
     id: 2,
-    title: 'Digital Rights & Civic Power — Workshop',
+    title: 'Election Hustings on Digital Tech / AI (Economy theme)',
     date: '2026-04-23',
-    time: '10:00',
-    location: 'Edinburgh, UK',
+    time: '18:30',
+    location: 'Edinburgh: Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT',
     description:
-      'A hands-on workshop exploring digital rights legislation, surveillance, and how citizens can reclaim power in the data economy. Practical tools and policy discussion combined.',
+      `How do we want digital technologies and AI to serve people, communities, and democracy? ​This Scottish Parliament election hustings is a chance to put those questions directly to the people seeking your vote.
+
+​The event will bring together politicians and experts to discuss Scotland's digital economy, digital rights, and the rules that should shape our technological future.`,
     rsvpUrl: 'https://luma.com/434lpdao',
   },
   // {
