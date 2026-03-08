@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: 'Election Hustings on Digital Tech and AI (Society and Media theme)',
+    title: 'Glasgow: Election Hustings on Tech and AI (Society and Media theme)',
     date: '2026-03-08',
     time: '18:30',
     location: 'Glasgow, UK',
@@ -13,7 +13,7 @@ The event will bring together politicians and experts to discuss digital media, 
   },
   {
     id: 2,
-    title: 'Election Hustings on Digital Tech and AI (Economy theme)',
+    title: 'Edinburgh: Election Hustings on Tech and AI (Economy theme)',
     date: '2026-04-23',
     time: '18:30',
     location: 'Edinburgh: Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT',
