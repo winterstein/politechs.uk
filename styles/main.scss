@@ -60,10 +60,30 @@ a {
   margin-bottom: 2.5rem;
 }
 
+.image-intro {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin-bottom: 0.5rem;
+}
+
 .section-title {
   font-size: 2rem;
   color: $primary;
   margin-bottom: 1.5rem;
+}
+
+.organisation-title {
+  font-size: 2rem;
+  color: #1a3a5c;
+  margin-bottom: 0.5rem;
+}
+
+.organisation-intro {
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin-bottom: 0.5rem;
 }
 
 // =========================================

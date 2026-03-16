@@ -11,11 +11,28 @@ description: Join us at our next hustings or events.
     <p class="page-intro">
       Join us at our next hustings or events. All events welcome people from politics, technology, civil society, and beyond.
     </p>
+
+    <h2 class="organisation-title">Pre-Election Events</h2>
+    <p class="organisation-intro">Hustings and conversations ahead of the election.</p>
+    <div class="row g-4 mb-3">
+      {% for event in events %}
+      {% if event.type == "pre-election" %}
+      <div class="col-md-6">
+        {{ eventCard(event) }}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <h2 class="organisation-title">Post-Election Events</h2>
+    <p class="organisation-intro">Follow-up sessions on delivery, reform, and implementation.</p>
     <div class="row g-4">
       {% for event in events %}
-        <div class="col-md-6 col-lg-4">
-          {{ eventCard(event) }}
-        </div>
+      {% if event.type == "post-election" %}
+      <div class="col-md-6">
+        {{ eventCard(event) }}
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

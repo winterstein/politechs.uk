@@ -54,9 +54,18 @@ export default [
       'Where researchers, students and businesses work side by side to turn AI and data science into practical, impactful solutions for society and industry.',
     tags: ['Academia', 'Research', 'AI', 'Entrepreneurship', 'Scotland'],
   },
+    {
+    id: 7,
+    name: 'NewSpeak House',
+    url: 'https://newspeak.house/',
+    type: 'partner',
+    description:
+      'Newspeak House is an independent residential college founded in 2015 to study, nurture and inspire emerging communities of practice across civil society and the public sector in the UK.',
+    tags: ['Civic Tech', 'Research', 'Public Sector', 'Technology', 'Democracy'],
+  },
 
   {
-    id: 7,
+    id: 8,
     name: 'AI Safety Hub Edinburgh',
     url: 'https://aished.org/',
     type: 'ecosystem',
@@ -65,7 +74,7 @@ export default [
     tags: ['AI', 'Society', 'Policy'],
   },
   {
-    id: 8,
+    id: 9,
     name: 'GovCamp Cymru',
     url: 'https://www.govcamp.cymru/',
     type: 'ecosystem',
@@ -74,7 +83,7 @@ export default [
     tags: ['Public Sector', 'Wales', 'Community'],
   },
   {
-    id: 9,
+    id: 10,
     name: 'Scottish Technology Club',
     url: 'https://www.scottishtechnology.club/',
     type: 'ecosystem',
@@ -83,7 +92,7 @@ export default [
     tags: ['Community', 'Technology', 'Scotland'],
   },
   {
-    id: 10,
+    id: 11,
     name: 'Civic Punks',
     url: 'https://civicpunks.com/',
     type: 'ecosystem',
@@ -92,7 +101,7 @@ export default [
     tags: ['Canada', 'World', 'Public Sector'],
   },
   {
-    id: 11,
+    id: 12,
     name: 'Tech Scalars',
     url: 'https://www.techscaler.co.uk/',
     type: 'ecosystem',
@@ -102,7 +111,7 @@ export default [
   },
 
   {
-    id: 12,
+    id: 13,
     name: 'One Team Government',
     url: 'https://www.oneteamgov.uk/',
     type: 'ecosystem',
@@ -111,7 +120,7 @@ export default [
     tags: ['Public Sector', 'Community', 'World'],
   },
   {
-    id: 13,
+    id: 14,
     name: 'E-Corner',
     url: 'https://linktr.ee/ecorner_edi',
     type: 'ecosystem',
@@ -120,7 +129,7 @@ export default [
     tags: ['Scotland', 'Private Sector', 'Technology', 'Economy'],
   },
   {
-    id: 14,
+    id: 15,
     name: 'GovCamp Scotland',
     url: 'https://www.govcamp.scot/',
     type: 'ecosystem',
@@ -129,7 +138,7 @@ export default [
     tags: ['Public Sector', 'Scotland', 'Community'],
   },
   {
-    id: 15,
+    id: 16,
     name: 'CodeBase',
     url: 'https://thisiscodebase.com/',
     type: 'ecosystem',
@@ -138,7 +147,7 @@ export default [
     tags: ['Private Sector', 'Community', 'Scotland', 'Economy', 'Technology'],
   },
   {
-    id: 16,
+    id: 17,
     name: 'Turing Festival',
     url: 'https://turingfest.com/',
     type: 'ecosystem',
@@ -147,7 +156,7 @@ export default [
     tags: ['Private Sector', 'Scotland', 'Global', 'Economy', 'Technology'],
   },
   {
-    id: 17,
+    id: 18,
     name: 'Policy Camp',
     url: 'https://policycamp.org.uk/',
     type: 'ecosystem',
@@ -156,7 +165,7 @@ export default [
     tags: ['Public Sector', 'UK', 'Policy', 'Community'],
   },
   {
-    id: 18,
+    id: 19,
     name: 'mySociety',
     url: 'https://www.mysociety.org/',
     type: 'ecosystem',

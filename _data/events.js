@@ -4,11 +4,13 @@ export default [
     title: 'Glasgow: Election Hustings on Tech and AI (Society and Media theme)',
     date: '2026-03-08',
     time: '18:30',
-    location: 'Glasgow, UK',
+    location: 'Impact Arts, 105 Brunswick St, Glasgow, G1 1TF and online',
+    type: "pre-election",
+    organised_with: '',
     description:
       `How is tech annd AI reshaping society and the media—and what should we do about it? This Scottish Parliament election hustings is a chance to put those questions directly to the people seeking your vote.
 
-The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place.`,
+The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place. Speakers include Patrick Harvey MSP, Professor Lillian Edwards, Pat Kane with Anna Burnside in the chair.`,
     rsvpUrl: 'https://luma.com/px4pzlsh',
   },
   {
@@ -16,21 +18,63 @@ The event will bring together politicians and experts to discuss digital media, 
     title: 'Edinburgh: Election Hustings on Tech and AI (Economy theme)',
     date: '2026-04-23',
     time: '18:30',
-    location: 'Edinburgh: Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT',
+    organised_with: 'ScotlandIS, Bayes Centre',
+    location: 'Edinburgh: Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT and online',
+    type: "pre-election",
     description:
       `How do we want the digital economy and AI to serve people, communities, and democracy? ​This Scottish Parliament election hustings is a chance to put those questions directly to the people seeking your vote.
 
 ​The event will bring together politicians and experts to discuss Scotland's digital economy, and the rules that should shape our technological future.`,
     rsvpUrl: 'https://luma.com/434lpdao',
   },
-  // {
-  //   id: 3,
-  //   title: 'Open Government Data — Hackathon',
-  //   date: '2026-05-15',
-  //   time: '09:00',
-  //   location: 'Online',
-  //   description:
-  //     'Build tools using open government data to improve transparency and civic engagement. Teams compete to create the most impactful civic-tech prototype over 48 hours.',
-  //   rsvpUrl: 'https://www.eventbrite.com',
-  // },
+  {
+    id: 3,
+    title: 'Instititionalising the Digital State',
+    date: '2026-04-21',
+    time: '7pm',
+    location: '133-135 Bethnal Green Road, London, E2 7DG',
+    type: "pre-election",
+    organised_with: 'NewSpeak House',
+    description:
+      'Digital transformation is traditionaly seen as something the political class do to the civil service. In fact it requires transformational change to political institutions, parliaments and the structure of legislation - and the impetus and insights to make this change work can only come from the practitioners in the civil service. Gordon Guthrie will present the results of his independent report for Scottish Government, Foundations of the Digital State.',
+    rsvpUrl: '',
+  },
+  {
+    id: 4,
+    title: 'The state and public sector',
+    date: 'tbc',
+    time: '',
+    location: 'Cardiff tbc',
+    type: "pre-election",
+    organised_with: 'Transform Gov Talks',
+    description:
+      `Public services in Wales are being held back by outdated systems, fragmented leadership and short-term fixes. People are frustrated. Trust is eroding. And the potential of our nation is being wasted.
+
+This event will look at building a more resilient, responsive Wales — one that works for everyone, for generations to come.`,
+    rsvpUrl: '',
+  },
+  {
+    id: 5,
+    title: 'The state and public sector',
+    date: 'tbc',
+    time: '',
+    location: 'Edinburgh tbc',
+    type: "post-election",
+    organised_with: 'Transform Gov Talks',
+    description:
+      `Everytime you pass a law, you get a computer system. The Scottish Parliament is 25 years old, born at the same time as the modern internet age. It wasn't designed to give birth to digital systems, but it does. It's time to take stock and see what changes are needed to make Scotland the leading digital state in the world.`,
+    rsvpUrl: '',
+  },
+  {
+    id: 5,
+    title: 'Silicon Valley is dead',
+    date: 'tbc',
+    time: '',
+    location: 'Edinburgh tbc',
+    type: "post-election",
+    organised_with: '',
+    description:
+      ` JK Galbraith said of a particular day during the great crash of 1929 that "the end had arrived but was not yet visible". So it is with Silicon Valley. Trump took $10bn of the $14bn price of TikTok in its recent takeover. Hegseth threatened Anthropic with the Defense Production Act if they didn't comply with his wishes. This invitation only Chatham House seminar will explore the post-SV world with practitioners and politicians who have built economic and security models around the continued puissance of Sand Hill Road.`,
+    rsvpUrl: '',
+  },
 ];
