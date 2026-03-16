@@ -1,0 +1,179 @@
+/* =========================================
+	 PoliTechs Tally Embed Overrides
+	 ========================================= */
+
+:root {
+	--pt-primary: #1a3a5c;
+	--pt-secondary: #e63946;
+	--pt-text: #1a1a2e;
+	--pt-muted: #6c757d;
+	--pt-bg: #f8f9fa;
+	--pt-radius: 0.5rem;
+	--pt-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+html {
+	font-size: 16px;
+}
+
+body,
+.tally-app,
+.tally-app * {
+	font-family: "Segoe UI", system-ui, -apple-system, sans-serif !important;
+}
+
+body {
+	background: var(--pt-bg) !important;
+	color: var(--pt-text) !important;
+	margin: 0;
+}
+
+.tally-app main {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1rem 2.5rem;
+}
+
+.tally-page {
+	background: #fff;
+	border-radius: 0.75rem;
+	box-shadow: var(--pt-shadow);
+	padding: 1.25rem 1.25rem 1.5rem;
+	margin-top: 0.5rem;
+}
+
+.tally-block-form-title h1 {
+	font-size: 2.2rem !important;
+	line-height: 1.15 !important;
+	font-weight: 700 !important;
+	color: var(--pt-primary) !important;
+	margin: 0.25rem 0 1rem !important;
+}
+
+.tally-block-text p,
+.tally-text,
+.tally-block-text {
+	color: var(--pt-text) !important;
+	font-size: 1rem !important;
+	line-height: 1.65 !important;
+}
+
+.tally-block-title h2,
+.tally-block-title h3 {
+	font-size: 1.15rem !important;
+	line-height: 1.4 !important;
+	margin: 1.2rem 0 0.45rem !important;
+	color: var(--pt-primary) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+
+.tally-required-indicator span {
+	color: var(--pt-secondary) !important;
+}
+
+.tally-app input[type="text"],
+.tally-app input[type="email"],
+.tally-app textarea {
+	width: 100%;
+	min-height: 44px;
+	border-radius: var(--pt-radius) !important;
+	border: 1px solid #d0d7de !important;
+	box-shadow: none !important;
+	background: #fff !important;
+	color: var(--pt-text) !important;
+	padding: 0.55rem 0.7rem !important;
+	font-size: 1rem !important;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tally-app textarea {
+	min-height: 110px;
+}
+
+.tally-app input[type="text"]:focus,
+.tally-app input[type="email"]:focus,
+.tally-app textarea:focus {
+	outline: none !important;
+	border-color: var(--pt-primary) !important;
+	box-shadow: 0 0 0 3px rgba(26, 58, 92, 0.16) !important;
+}
+
+.tally-app input::placeholder,
+.tally-app textarea::placeholder {
+	color: var(--pt-muted) !important;
+	opacity: 1;
+}
+
+.tally-checkbox {
+	margin-top: 0.45rem;
+}
+
+.tally-checkbox label {
+	color: var(--pt-text) !important;
+	line-height: 1.5;
+}
+
+.tally-checkbox input[type="checkbox"] {
+	accent-color: var(--pt-primary);
+}
+
+.tally-submit-button {
+	margin-top: 1rem;
+}
+
+.tally-submit-button button,
+.tally-submit-button .kWOpny {
+	border-radius: var(--pt-radius) !important;
+	border: 1px solid var(--pt-primary) !important;
+	background: var(--pt-primary) !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	min-height: 44px;
+	padding: 0.55rem 1.1rem !important;
+	transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.tally-submit-button button:hover,
+.tally-submit-button .kWOpny:hover {
+	background: #13304e !important;
+	border-color: #13304e !important;
+}
+/* Email input: stable selector using block type + data attribute */
+[data-block-type="INPUT_EMAIL"] input[type="email"][data-sentry-element="Input"] {
+  display: block !important;
+  width: 100% !important;
+  min-height: 44px !important;
+  padding: 0.55rem 0.7rem !important;
+  margin: 0 !important;
+  border: 1px solid #d0d7de !important;
+  border-radius: 0.5rem !important;
+  box-shadow: none !important;
+  background: #fff !important;
+}
+
+/* Reset immediate wrappers inside this block */
+[data-block-type="INPUT_EMAIL"] > div,
+[data-block-type="INPUT_EMAIL"] > div > div,
+[data-block-type="INPUT_EMAIL"] > div > div > div {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+progress {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.tally-page {
+		border-radius: 0.5rem;
+		padding: 1rem;
+	}
+
+	.tally-block-form-title h1 {
+		font-size: 1.8rem !important;
+	}
+}

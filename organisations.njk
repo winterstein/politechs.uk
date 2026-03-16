@@ -1,0 +1,94 @@
+---
+layout: base.njk
+title: Organisations — nationalconversations.org
+description: We're part of a wider ecosystem of organisations working at the intersection of politics, technology, and society.
+---
+
+<main class="page-main">
+  <div class="container">
+    <h1 class="page-title">How we are organised</h1>
+    <p class="page-intro">
+      We're part of a wider ecosystem of organisations working at the intersection of politics, technology, and society. National Conversations is about questions and not answers and we seek to work as part of an ecosystem - this is how we see the world.
+    </p>
+
+    <!-- Core Organisations -->
+      <h2 class="organisation-title">Core Organisations</h2>
+        <p class="organisation-intro">These are the core organisations driving National Conversations:</p>
+    <div class="row g-4 mb-3">
+      {% for org in organisations %}
+      {% if org.type == "core" %}
+      <div class="col-md-6">
+        <div class="card group-card h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ org.name }}</h5>
+            <p class="card-text flex-grow-1">{{ org.description }}</p>
+            <div class="group-tags mb-3">
+              {% for tag in org.tags %}
+              <span class="badge rounded-pill bg-secondary me-1">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <a href="{{ org.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary align-self-start">
+              Visit website &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Partner Organisations -->
+      <h2 class="organisation-title">Partners</h2>
+        <p class="organisation-intro">We work with a range of partners in delivering these events:</p>
+    <div class="row g-4 mb-3">
+      {% for org in organisations %}
+      {% if org.type == "partner" %}
+      <div class="col-md-6">
+        <div class="card group-card h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ org.name }}</h5>
+            <p class="card-text flex-grow-1">{{ org.description }}</p>
+            <div class="group-tags mb-3">
+              {% for tag in org.tags %}
+              <span class="badge rounded-pill bg-secondary me-1">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <a href="{{ org.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary align-self-start">
+              Visit website &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Ecosystems Organisations -->
+      <h2 class="organisation-title">The Ecosystem</h2>
+        <p class="organisation-intro">This is the sea in which we swim - we commend the work of these organisations.<strong>Caveat Lector</strong> this does not imply they commend us.</p>
+    <div class="row g-4">
+      {% for org in organisations %}
+      {% if org.type == "ecosystem" %}
+      <div class="col-md-6">
+        <div class="card group-card h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ org.name }}</h5>
+            <p class="card-text flex-grow-1">{{ org.description }}</p>
+            <div class="group-tags mb-3">
+              {% for tag in org.tags %}
+              <span class="badge rounded-pill bg-secondary me-1">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <a href="{{ org.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary align-self-start">
+              Visit website &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+
+  </div>
+</main>
