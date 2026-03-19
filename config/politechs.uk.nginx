@@ -9,7 +9,7 @@ map $sent_http_content_type $expires {
 }
 
 server {
-	server_name politechs.uk localpolitechs.uk;
+	server_name politechs.uk localpolitechs.uk www.politechs.uk nationalconversations.org www.nationalconversations.org;
 
 	listen 80;
 	listen [::]:80;
