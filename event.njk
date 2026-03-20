@@ -1,0 +1,67 @@
+---
+layout: base.njk
+pagination:
+  data: events
+  size: 1
+  alias: event
+permalink: /events/{{ event.id }}/
+eleventyComputed:
+  title: "{{ event.title }} — Events — NationalConversations.org"
+  description: "{{ event.description }}"
+---
+
+<main class="page-main">
+  <div class="container">
+    {% set isTbcDate = event.date and (event.date | lower) == 'tbc' %}
+    <p class="small mb-3"><a href="/events/">&larr; All events</a></p>
+
+    <div class="card event-card event-detail-card">
+      <div class="card-body d-flex flex-column">
+        <div class="event-date-badge mb-2">
+          <span class="badge rounded-pill bg-primary">
+            {% if isTbcDate %}
+            {{ event.date }}
+            {% else %}
+            {{ event.date | formatDate }}
+            {% endif %}
+            {% if event.time %} &middot; {{ event.time }}{% endif %}
+          </span>
+        </div>
+
+        <h1 class="card-title">{{ event.title }}</h1>
+        <p class="event-location text-muted small mb-2">
+          <i class="bi bi-geo-alt-fill me-1"></i>{{ event.location }}
+        </p>
+
+        {% if event.organised_with %}
+        <p class="event-organised-with text-muted small mb-2">
+          <strong>Organised with:</strong> {{ event.organised_with }}
+        </p>
+        {% endif %}
+
+        <p class="card-text">{{ event.description }}</p>
+
+        {% if event.speakers and event.speakers.length %}
+        <div class="event-speakers small mb-2">
+          <strong>Speakers:</strong>
+          <ul class="mb-0 mt-1 ps-3">
+            {% for speaker in event.speakers %}
+            <li>
+              <strong>{{ speaker.name }}</strong>{% if speaker.details %} {{ speaker.details }}{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if event.speakers_notes %}
+        <p class="event-speakers-notes text-muted small mb-3">{{ event.speakers_notes }}</p>
+        {% endif %}
+
+        {% if event.rsvpUrl %}
+        <a href="{{ event.rsvpUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary align-self-start">Register &rarr;</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</main>
