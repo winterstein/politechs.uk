@@ -8,13 +8,18 @@ permalink: /signatories/
 <main class="page-main">
   <div class="container">
     <h1 class="page-title">Signatories</h1>
-    <p class="page-intro">These are some of the people have signed our pledge to put politics and technology in conversation for the benefit of society.</p>
+    <p class="signatory-intro">These are some of the people have signed our pledge to put politics and technology in conversation
+      for the benefit of society.</p>
+      <div class="mb-3">
+    <a href="/the_pledge/" class="btn btn-primary btn-lg">Sign the Pledge</a>
+    <a href="https://www.crowdfunder.co.uk/p/national-conversations" class="btn btn-primary btn-lg">Donate</a>
+    </div>
     <ul class="list-unstyled signatories-list">
       {% for person in signatories %}
-      <li class="signatory-item">
-        <strong class="signatory-name">{{ person.name }}</strong>
-        <p class="signatory-description">{{ person.description }}</p>
-      </li>
+        <li class="signatory-item">
+          <strong class="signatory-name">{{ person.name }}</strong>
+          <p class="signatory-description">{{ person.description }}</p>
+        </li>
       {% endfor %}
     </ul>
   </div>
