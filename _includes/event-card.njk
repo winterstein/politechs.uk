@@ -28,7 +28,7 @@
       <ul class="mb-0 mt-1 ps-3">
         {% for speaker in event.speakers %}
         <li>
-          <strong>{{ speaker.name }}</strong>{% if speaker.details %}: {{ speaker.details }}{% endif %}
+          <strong>{{ speaker.name }}</strong>{% if speaker.details %} {{ speaker.details }}{% endif %}
         </li>
         {% endfor %}
       </ul>
