@@ -42,6 +42,21 @@ The event will bring together politicians and experts to discuss digital media, 
   },
   {
     id: 3,
+    title: 'National Conversations',
+    date: '2026-04-02',
+    time: '7pm',
+    location: 'The Social Hub, 15 Candleriggs, Glasgow',
+    type: "pre-election",
+    organised_with: 'TechMeetup Glasgow',
+    description:
+      'What is National Conversations about and why should people in the tech sector care? Your change to learn why we are organising these events, what we hope to change and how you can get involved.',
+    speakers: [
+      { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' }
+    ],
+  rsvpUrl: 'https://www.meetup.com/techmeetup/events/313769073/',
+  },
+  {
+    id: 4,
     title: 'Institutionalising the Digital State',
     date: '2026-04-20',
     time: '7pm',
@@ -57,7 +72,7 @@ The event will bring together politicians and experts to discuss digital media, 
   rsvpUrl: 'https://luma.com/i67xapci',
   },
   {
-    id: 4,
+    id: 5,
     title: 'The state and public sector',
     date: 'tbc',
     time: '',
@@ -71,7 +86,7 @@ This event will look at building a more resilient, responsive Wales — one that
     rsvpUrl: '',
   },
   {
-    id: 5,
+    id: 6,
     title: 'The state and public sector',
     date: 'tbc',
     time: '',
@@ -83,7 +98,7 @@ This event will look at building a more resilient, responsive Wales — one that
     rsvpUrl: '',
   },
   {
-    id: 5,
+    id: 7,
     title: 'Silicon Valley is dead',
     date: 'tbc',
     time: '',
