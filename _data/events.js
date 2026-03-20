@@ -10,7 +10,14 @@ export default [
     description:
       `How is tech and AI reshaping society and the media—and what should we do about it? This Scottish Parliament election hustings is a chance to put those questions directly to the people seeking your vote.
 
-The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place. Speakers include Patrick Harvey MSP, Professor Lillian Edwards, Pat Kane with Anna Burnside in the chair.`,
+The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place.`,
+    speakers: [
+      { name: 'Patrick Harvey MSP', details: '(Green Party)' },
+      { name: 'Anna Burnside', details: 'Chair' },
+      { name: 'Professor Lillian Edwards', details: "University of Newcastle" },
+      { name: 'Pat Kane', details: "Artist and cultural commentator" },
+    ],
+    speakers_notes: 'Other speakers tbc',
     rsvpUrl: 'https://luma.com/px4pzlsh',
   },
   {
@@ -26,6 +33,12 @@ The event will bring together politicians and experts to discuss digital media, 
 
 ​The event will bring together politicians and experts to discuss Scotland's digital economy, and the rules that should shape our technological future.`,
     rsvpUrl: 'https://luma.com/434lpdao',
+    speakers: [
+      { name: 'Daniel Johnson MSP', details: '(Labour Party)' },
+      { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Stragegy' },
+      { name: 'Professor Fiona McNeill', details: 'Edinburgh University'}
+    ],
+    speakers_notes: 'Other speakers tbc',
   },
   {
     id: 3,
@@ -37,7 +50,11 @@ The event will bring together politicians and experts to discuss digital media, 
     organised_with: 'NewSpeak House',
     description:
       'Digital transformation is traditionally seen as something the political class do to the civil service. In fact it requires transformational change to political institutions, parliaments and the structure of legislation - and the impetus and insights to make this change work can only come from the practitioners in the civil service. Gordon Guthrie will present the results of his independent report for Scottish Government, Foundations of the Digital State.',
-    rsvpUrl: 'https://luma.com/i67xapci',
+    speakers: [
+      { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' }
+    ],
+  speakers_notes: 'Other speakers tbc',
+  rsvpUrl: 'https://luma.com/i67xapci',
   },
   {
     id: 4,

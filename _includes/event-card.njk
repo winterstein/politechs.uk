@@ -22,6 +22,23 @@
     </p>
     {% endif %}
     <p class="card-text flex-grow-1">{{ event.description }}</p>
+    {% if event.speakers and event.speakers.length %}
+    <div class="event-speakers small mb-2">
+      <strong>Speakers:</strong>
+      <ul class="mb-0 mt-1 ps-3">
+        {% for speaker in event.speakers %}
+        <li>
+          <strong>{{ speaker.name }}</strong>{% if speaker.details %}: {{ speaker.details }}{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if event.speakers_notes %}
+    <p class="event-speakers-notes text-muted small mb-2">
+      {{ event.speakers_notes }}
+    </p>
+    {% endif %}
     {% if event.rsvpUrl %}
     <a href="{{ event.rsvpUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-auto align-self-start">
       Register &rarr;
