@@ -13,6 +13,7 @@ export default [
 The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place.`,
     speakers: [
       { name: 'Patrick Harvey MSP', details: '(Green Party)' },
+      { name: 'Vonnie Sandlan', details: '(Scottish Labour)' },
       { name: 'Anna Burnside', details: 'Chair' },
       { name: 'Professor Lillian Edwards', details: "University of Newcastle" },
       { name: 'Pat Kane', details: "Artist and cultural commentator" },
@@ -34,7 +35,7 @@ The event will bring together politicians and experts to discuss digital media, 
 ​The event will bring together politicians and experts to discuss Scotland's digital economy, and the rules that should shape our technological future.`,
     rsvpUrl: 'https://luma.com/434lpdao',
     speakers: [
-      { name: 'Daniel Johnson MSP', details: '(Labour Party)' },
+      { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
       { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Stragegy' },
       { name: 'Professor Fiona McNeill', details: 'Edinburgh University'}
     ],
