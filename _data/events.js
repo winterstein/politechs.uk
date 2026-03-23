@@ -36,7 +36,7 @@ The event will bring together politicians and experts to discuss digital media, 
     rsvpUrl: 'https://luma.com/434lpdao',
     speakers: [
       { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
-      { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Stragegy' },
+      { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Strategy' },
       { name: 'Professor Fiona McNeill', details: 'Edinburgh University'}
     ],
     speakers_notes: 'Other speakers tbc',
