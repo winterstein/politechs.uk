@@ -27,7 +27,7 @@ The event will bring together politicians and experts to discuss digital media, 
     date: '2026-04-23',
     time: '18:30',
     organised_with: 'ScotlandIS, Bayes Centre',
-    location: 'Edinburgh: Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT and online',
+    location: 'Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT and online',
     type: "pre-election",
     description:
       `How do we want the digital economy and AI to serve people, communities, and democracy? ​This Scottish Parliament election hustings is a chance to put those questions directly to the people seeking your vote.
