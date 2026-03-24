@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: 'Glasgow: Election Hustings on Tech and AI (Society and Media theme)',
-    date: '2026-03-08',
+    date: '2026-04-08',
     time: '18:30',
     location: 'Impact Arts, 105 Brunswick St, Glasgow, G1 1TF and online',
     type: "pre-election",
