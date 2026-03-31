@@ -12,7 +12,7 @@ export default [
 
 The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place.`,
     speakers: [
-      { name: 'Patrick Harvie MSP'v, details: '(Green Party)' },
+      { name: 'Patrick Harvie MSP', details: '(Green Party)' },
       { name: 'Vonnie Sandlan', details: '(Scottish Labour)' },
       { name: 'Declan Blench', details: '(SNP)' },
       { name: 'Anna Burnside', details: 'Chair' },
@@ -37,6 +37,9 @@ The event will bring together politicians and experts to discuss digital media, 
     rsvpUrl: 'https://luma.com/434lpdao',
     speakers: [
       { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
+      { name: "Miles Briggs MSP", details: "(Scottish Conservatives)"},
+      {name: "Ben Macpherson MSP", details: "(SNP)"},
+      {name: "Ethan Claridge", details: "Chair"},
       { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Strategy' },
       { name: 'Professor Fiona McNeill', details: 'Edinburgh University'}
     ],
