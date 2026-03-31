@@ -12,7 +12,7 @@ export default [
 
 The event will bring together politicians and experts to discuss digital media, digital rights, and the rules that should shape our technological future. RSVP via the link above to secure your place.`,
     speakers: [
-      { name: 'Patrick Harvey MSP', details: '(Green Party)' },
+      { name: 'Patrick Harvie MSP'v, details: '(Green Party)' },
       { name: 'Vonnie Sandlan', details: '(Scottish Labour)' },
       { name: 'Declan Blench', details: '(SNP)' },
       { name: 'Anna Burnside', details: 'Chair' },
