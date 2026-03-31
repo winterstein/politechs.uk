@@ -15,7 +15,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "css": "css" });
 
   // Copy public folder (favicon etc.)
-  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy({ "public": "/" });
 
   // Ignore old Vite/React source files and docs
   eleventyConfig.ignores.add("index.html");
