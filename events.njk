@@ -1,22 +1,38 @@
 ---
 layout: base.njk
-title: Events — PoliTechs.uk
-description: Join us at our next events — from panel discussions and workshops to hackathons and networking sessions.
+title: Events — nationalconversations.org
+description: Join us at our next hustings or events.
 ---
-{% from "event-card.njk" import eventCard %}
 
+{% from "event-card.njk" import eventCard %}
 <main class="page-main">
   <div class="container">
     <h1 class="page-title">Events</h1>
     <p class="page-intro">
-      Join us at our next events — from panel discussions and workshops to hackathons and networking sessions.
-      All events welcome people from politics, technology, civil society, and beyond.
+      Join us at our next hustings or events. All events welcome people from politics, technology, civil society, and beyond.
     </p>
-    <div class="row g-4">
+
+    <h2 class="organisation-title">Pre-Election Events</h2>
+    <p class="organisation-intro">Hustings and conversations ahead of the election.</p>
+    <div class="row g-4 mb-3">
       {% for event in events %}
-      <div class="col-md-6 col-lg-4">
+      {% if event.type == "pre-election" %}
+      <div class="col-md-6">
         {{ eventCard(event) }}
       </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <h2 class="organisation-title">Post-Election Events</h2>
+    <p class="organisation-intro">Follow-up sessions on delivery, reform, and implementation.</p>
+    <div class="row g-4">
+      {% for event in events %}
+      {% if event.type == "post-election" %}
+      <div class="col-md-6">
+        {{ eventCard(event) }}
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

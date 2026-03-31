@@ -1,0 +1,41 @@
+---
+layout: base.njk
+title: Questions — nationalconversations.orgs
+description: The major questions we need to ask about digital society, the economy, and the state.
+permalink: /questions/
+---
+
+<main class="page-main">
+  <div class="container">
+    <h1 class="page-title">Questions</h1>
+    <p class="page-intro">
+      The national conversation starts with clear questions. Explore the core issues across society,
+      the private sector, and the public realm.
+    </p>
+    <div class="row g-4">
+      {% for topic in questionTopics %}
+      <div class="col-12 col-xl-4">
+        <article class="card event-card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h4">{{ topic.title }}</h2>
+            <p class="card-text text-muted mb-3">{{ topic.intro }}</p>
+
+            <div class="flex-grow-1">
+              {% for section in topic.sections %}
+                {% if section.heading %}
+                <h3 class="h6 text-uppercase text-muted mt-3 mb-2">{{ section.heading }}</h3>
+                {% endif %}
+                <ul class="mb-3">
+                  {% for question in section.questions %}
+                  <li class="mb-2">{{ question }}</li>
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+          </div>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</main>
