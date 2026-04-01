@@ -63,9 +63,18 @@ export default [
       'Newspeak House is an independent residential college founded in 2015 to study, nurture and inspire emerging communities of practice across civil society and the public sector in the UK.',
     tags: ['Civic Tech', 'Research', 'Public Sector', 'Technology', 'Democracy'],
   },
+    {
+    id: 7,
+    name: 'Silicon Croft',
+    url: 'https://www.mesomorphic.co.uk/siliconcroft/',
+    type: 'partner',
+    description:
+      'Silicon Croft is organising the tech sector in Shetland both for remote and local workers and helping build community and infrastructure, from Code Clubs and working with libraries, working with Skills Development Scotland, Developing the Young Workforce, Shetland Libraries, Youth Workers, Career Advisors, Guide and Scout leaders to increase digital literacy and the use of digital tools to make island, rural and highland society better.',
+    tags: ['Civic Tech', 'Skills Training', 'Rurual and Island Life', 'Technology', 'Democracy'],
+  },
 
   {
-    id: 8,
+    id: 18,
     name: 'AI Safety Hub Edinburgh',
     url: 'https://aished.org/',
     type: 'ecosystem',
@@ -74,7 +83,7 @@ export default [
     tags: ['AI', 'Society', 'Policy'],
   },
   {
-    id: 9,
+    id: 19,
     name: 'GovCamp Cymru',
     url: 'https://www.govcamp.cymru/',
     type: 'ecosystem',
@@ -83,7 +92,7 @@ export default [
     tags: ['Public Sector', 'Wales', 'Community'],
   },
   {
-    id: 10,
+    id: 20,
     name: 'Scottish Technology Club',
     url: 'https://www.scottishtechnology.club/',
     type: 'ecosystem',
@@ -92,7 +101,7 @@ export default [
     tags: ['Community', 'Technology', 'Scotland'],
   },
   {
-    id: 11,
+    id: 21,
     name: 'Civic Punks',
     url: 'https://civicpunks.com/',
     type: 'ecosystem',
@@ -101,7 +110,7 @@ export default [
     tags: ['Canada', 'World', 'Public Sector'],
   },
   {
-    id: 12,
+    id: 22,
     name: 'Tech Scalars',
     url: 'https://www.techscaler.co.uk/',
     type: 'ecosystem',
@@ -111,7 +120,7 @@ export default [
   },
 
   {
-    id: 13,
+    id: 23,
     name: 'One Team Government',
     url: 'https://www.oneteamgov.uk/',
     type: 'ecosystem',
@@ -120,7 +129,7 @@ export default [
     tags: ['Public Sector', 'Community', 'World'],
   },
   {
-    id: 14,
+    id: 24,
     name: 'E-Corner',
     url: 'https://linktr.ee/ecorner_edi',
     type: 'ecosystem',
@@ -129,7 +138,7 @@ export default [
     tags: ['Scotland', 'Private Sector', 'Technology', 'Economy'],
   },
   {
-    id: 15,
+    id: 25,
     name: 'GovCamp Scotland',
     url: 'https://www.govcamp.scot/',
     type: 'ecosystem',
@@ -138,7 +147,7 @@ export default [
     tags: ['Public Sector', 'Scotland', 'Community'],
   },
   {
-    id: 16,
+    id: 26,
     name: 'CodeBase',
     url: 'https://thisiscodebase.com/',
     type: 'ecosystem',
@@ -147,7 +156,7 @@ export default [
     tags: ['Private Sector', 'Community', 'Scotland', 'Economy', 'Technology'],
   },
   {
-    id: 17,
+    id: 27,
     name: 'Turing Festival',
     url: 'https://turingfest.com/',
     type: 'ecosystem',
@@ -156,7 +165,7 @@ export default [
     tags: ['Private Sector', 'Scotland', 'Global', 'Economy', 'Technology'],
   },
   {
-    id: 18,
+    id: 28,
     name: 'Policy Camp',
     url: 'https://policycamp.org.uk/',
     type: 'ecosystem',
@@ -165,7 +174,7 @@ export default [
     tags: ['Public Sector', 'UK', 'Policy', 'Community'],
   },
   {
-    id: 19,
+    id: 29,
     name: 'mySociety',
     url: 'https://www.mysociety.org/',
     type: 'ecosystem',
