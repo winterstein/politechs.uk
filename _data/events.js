@@ -19,7 +19,7 @@ The event will bring together politicians and experts to discuss digital media, 
       { name: 'Professor Lillian Edwards', details: "University of Newcastle" },
       { name: 'Pat Kane', details: "Artist and cultural commentator" },
     ],
-    speakers_notes: 'Other speakers tbc',
+    speakers_notes: 'Several requests have been made to Reform to provide a candidate.',
     rsvpUrl: 'https://luma.com/px4pzlsh',
   },
   {
@@ -45,7 +45,7 @@ The event will bring together politicians and experts to discuss digital media, 
       { name: 'Professor Fiona McNeill', details: 'Edinburgh University'},
       { name: 'Professor Marion Thain', details: 'Edinburgh Futures Institute'}
     ],
-    speakers_notes: 'Other speakers tbc',
+    speakers_notes: '',
   },
   {
     id: 3,
