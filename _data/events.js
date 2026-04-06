@@ -39,9 +39,11 @@ The event will bring together politicians and experts to discuss digital media, 
       { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
       { name: "Miles Briggs MSP", details: "(Scottish Conservatives)"},
       {name: "Ben Macpherson MSP", details: "(SNP)"},
+      { name: 'Andy Williamson', details: '(LibDems)'},
       {name: "Ethan Claridge", details: "Chair"},
       { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Strategy' },
-      { name: 'Professor Fiona McNeill', details: 'Edinburgh University'}
+      { name: 'Professor Fiona McNeill', details: 'Edinburgh University'},
+      { name: 'Professor Marion Thain', details: 'Edinburgh Futures Institute'}
     ],
     speakers_notes: 'Other speakers tbc',
   },
