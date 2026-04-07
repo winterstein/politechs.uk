@@ -58,6 +58,9 @@ eleventyComputed:
         <p class="event-speakers-notes text-muted small mb-3">{{ event.speakers_notes }}</p>
         {% endif %}
 
+        {% if event.livestream %}
+        <p class="small mb-2"><a href="{{ event.livestream }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle me-1"></i>Watch livestream</a></p>
+        {% endif %}
         {% if event.rsvpUrl %}
         <a href="{{ event.rsvpUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary align-self-start">Register &rarr;</a>
         {% endif %}

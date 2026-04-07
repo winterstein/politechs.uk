@@ -21,6 +21,7 @@ The event will bring together politicians and experts to discuss digital media, 
     ],
     speakers_notes: 'Several requests have been made to Reform to provide a candidate.',
     rsvpUrl: 'https://luma.com/px4pzlsh',
+    livestream: 'https://www.youtube.com/live/dFTm8Wr9wgA',
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ The event will bring together politicians and experts to discuss digital media, 
 
 ​The event will bring together politicians and experts to discuss Scotland's digital economy, and the rules that should shape our technological future.`,
     rsvpUrl: 'https://luma.com/434lpdao',
+    livestream: '',
     speakers: [
       { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
       { name: "Miles Briggs MSP", details: "(Scottish Conservatives)"},
@@ -61,6 +63,7 @@ The event will bring together politicians and experts to discuss digital media, 
       { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' }
     ],
   rsvpUrl: 'https://www.meetup.com/techmeetup/events/313769073/',
+  livestream: '',
   },
   {
     id: 4,
@@ -77,6 +80,7 @@ The event will bring together politicians and experts to discuss digital media, 
     ],
   speakers_notes: 'Other speakers tbc',
   rsvpUrl: 'https://luma.com/i67xapci',
+  livestream: '',
   },
   {
     id: 5,
@@ -89,6 +93,7 @@ The event will bring together politicians and experts to discuss digital media, 
     description:
       `The May elections are key transitional events. A new generation of digital native politicians - ones who don't remember before the internet - are starting to arrive with different expectations and attitudes. It comes at a time when the crises and opportunities of tech are more apparent. Digital is critical for economic development and the delivery of public services and how we organise our cultural and social life. But it is also the font of hybrid warfare, disinformation, state surveillance, rampant fraud, sexual abuse and harassment. This event is for organisers in community- and practitioner-led technical and social digital organisations to meet National Conversations and discuss how we collectively can effect political change.`,
     rsvpUrl: 'https://luma.com/x0gf5rhz',
+    livestream: '',
   },
   {
     id: 6,
@@ -103,6 +108,7 @@ The event will bring together politicians and experts to discuss digital media, 
 
 This event will look at building a more resilient, responsive Wales — one that works for everyone, for generations to come.`,
     rsvpUrl: '',
+    livestream: '',
   },
   {
     id: 7,
@@ -115,6 +121,7 @@ This event will look at building a more resilient, responsive Wales — one that
     description:
       `Every time you pass a law, you get a computer system. The Scottish Parliament is 25 years old, born at the same time as the modern internet age. It wasn't designed to give birth to digital systems, but it does. It's time to take stock and see what changes are needed to make Scotland the leading digital state in the world.`,
     rsvpUrl: '',
+    livestream: '',
   },
   {
     id: 8,
@@ -127,5 +134,6 @@ This event will look at building a more resilient, responsive Wales — one that
     description:
       ` JK Galbraith said of a particular day during the great crash of 1929 that "the end had arrived but was not yet visible". So it is with Silicon Valley. Trump took $10bn of the $14bn price of TikTok in its recent takeover. Hegseth threatened Anthropic with the Defense Production Act if they didn't comply with his wishes. This invitation only Chatham House seminar will explore the post-SV world with practitioners and politicians who have built economic and security models around the continued puissance of Sand Hill Road.`,
     rsvpUrl: '',
+    livestream: '',
   },
 ];

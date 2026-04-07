@@ -42,6 +42,9 @@
     <p class="small mb-3">
       <a href="/events/{{ event.id }}/">Permalink</a>
     </p>
+    {% if event.livestream %}
+    <p class="small mb-2"><a href="{{ event.livestream }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle me-1"></i>Watch livestream</a></p>
+    {% endif %}
     {% if event.rsvpUrl %}
     <a href="{{ event.rsvpUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto align-self-start">
       Register &rarr;
