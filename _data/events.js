@@ -43,7 +43,7 @@ The event will bring together politicians and experts to discuss digital media, 
       {name: "Ben Macpherson MSP", details: "(SNP)"},
       { name: 'Andy Williamson', details: '(LibDems)'},
       {name: "Ethan Claridge", details: "Chair"},
-      { name: 'Brian Bagelow', details: 'Level Up Scotland, National Games Strategy' },
+      { name: 'Brian Baglow', details: 'Level Up Scotland, National Games Strategy' },
       { name: 'Professor Fiona McNeill', details: 'Edinburgh University'},
       { name: 'Professor Marion Thain', details: 'Edinburgh Futures Institute'}
     ],
