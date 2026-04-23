@@ -28,7 +28,7 @@ The event will bring together politicians and experts to discuss digital media, 
     title: 'Edinburgh: Election Hustings on Tech and AI (Economy theme)',
     date: '2026-04-23',
     time: '18:30',
-    organised_with: 'ScotlandIS, Bayes Centre',
+    organised_with: 'ScotlandIS, Bayes Centre, Dr Daniel Winterstein',
     location: 'Bayes Centre, University of Edinburgh, 47 Potterrow, Edinburgh, EH8 9BT and online',
     type: "pre-election",
     description:
