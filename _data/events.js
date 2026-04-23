@@ -38,7 +38,7 @@ The event will bring together politicians and experts to discuss digital media, 
     rsvpUrl: 'https://luma.com/434lpdao',
     livestream: '',
     speakers: [
-      { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
+      { name: 'Kirsty McNeill MP', details: '(Scottish Labour)' },
       { name: "Miles Briggs MSP", details: "(Scottish Conservatives)"},
       {name: "Ben Macpherson MSP", details: "(SNP)"},
       { name: 'Andy Williamson', details: '(LibDems)'},

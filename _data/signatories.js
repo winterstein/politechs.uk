@@ -12,6 +12,7 @@ export default [
   { name: 'Jerry Fishenden', description: 'Seasoned digital professional with extensive experience of delivering better organisations and outcomes in both public and private sectors.' },
   { name: 'Alan Fowler', description: 'Retired business person with special experience in making futures happen.' },
   { name: 'Gavin Freeguard', description: 'Director, State of the Future' },
+  {name: 'Francesca Galli', description: 'Technologist, public and private sector consultant'},
   { name: 'Gordon Guthrie', description: 'Founder, Tech Executive, ex-Research Fellow at Scottish Government' },
   { name: 'Joe Halliwell', description: 'Old time AI founder currently in large financial institution' },
   { name: 'Keith Harrison', description: 'Software developer' },
