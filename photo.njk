@@ -1,0 +1,41 @@
+---
+layout: base.njk
+pagination:
+  data: photos
+  size: 1
+  alias: photo
+permalink: /photos/{{ photo.id }}/
+eleventyComputed:
+  title: "{{ photo.eventTitle }} — {{ photo.year }} — Photos — NationalConversations.org"
+  description: "Photo from {{ photo.eventTitle }} in {{ photo.location }}, {{ photo.year }}"
+---
+
+<main class="page-main">
+  <div class="container">
+    <p class="small mb-3"><a href="/photos/">&larr; Back to Photos</a></p>
+
+    <div class="photo-detail-container">
+      <figure class="photo-detail-figure">
+        <img src="{{ photo.url }}" alt="{{ photo.eventTitle }} - {{ photo.location }}" class="photo-detail-image">
+        <figcaption class="photo-detail-caption mt-3">
+          <h1 class="photo-detail-title">{{ photo.eventTitle }}</h1>
+          <p class="photo-detail-meta text-muted">{{ photo.year }} • {{ photo.location }}</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="photo-nav mt-4 d-flex justify-content-between">
+      {% if photo.id > 1 %}
+        <a href="/photos/{{ photo.id - 1 }}/" class="btn btn-outline-primary btn-sm">&larr; Previous</a>
+      {% else %}
+        <div></div>
+      {% endif %}
+      
+      {% if photo.id < photos.length %}
+        <a href="/photos/{{ photo.id + 1 }}/" class="btn btn-outline-primary btn-sm">Next &rarr;</a>
+      {% else %}
+        <div></div>
+      {% endif %}
+    </div>
+  </div>
+</main>
