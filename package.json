@@ -3,12 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
+    "check:node": "node -e \"const major=Number(process.versions.node.split('.')[0]);if(major<18){console.error('Node 18+ is required. Current: '+process.versions.node);process.exit(1)};process.exit(0)\"",
     "build:css": "sass styles/main.scss css/main.css --load-path=node_modules",
-    "build": "npm run build:css && eleventy",
-    "start": "npm run build:css && eleventy --serve",
+    "build": "npm run check:node && npm run build:css && eleventy",
+    "start": "npm run check:node && npm run build:css && eleventy --serve",
     "watch:css": "sass --watch styles/main.scss css/main.css --load-path=node_modules",
-    "dev": "concurrently \"npm run watch:css\" \"eleventy --serve\""
+    "dev": "npm run check:node && concurrently \"npm run watch:css\" \"eleventy --serve\""
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
@@ -19,4 +23,3 @@
     "concurrently": "^9.1.2"
   }
 }
-
