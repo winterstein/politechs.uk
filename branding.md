@@ -9,13 +9,13 @@
 
 ## Colours
 
-| Name | Hex | Usage |
-|------|-----|-------|
-| Navy (Primary) | `#1a3a5c` | Headers, primary buttons, headings |
-| Energised Red | `#e63946` | Accents, CTAs, highlights |
-| Mid Blue | `#457b9d` | Links, secondary accents |
-| Dark | `#0d1b2a` | Footer background |
-| Light Grey | `#f8f9fa` | Section backgrounds |
+| Name           | Hex       | Usage                                |
+|----------------|-----------|--------------------------------------|
+| Navy (Primary) | `#1a3a5c` | Headers, primary buttons, headings   |
+| Energised Red  | `#e63946` | Accents, CTAs, highlights            |
+| Mid Blue       | `#457b9d` | Links, secondary accents             |
+| Dark           | `#0d1b2a` | Footer background                    |
+| Light Grey     | `#f8f9fa` | Section backgrounds                  |
 
 ### Rationale
 - **Navy** conveys trustworthiness and institutional credibility — essential for a politics-focused brand.
