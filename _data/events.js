@@ -39,13 +39,13 @@ The event will bring together politicians and experts to discuss digital media, 
     livestream: '',
     speakers: [
       { name: 'Daniel Johnson MSP', details: '(Scottish Labour)' },
-      { name: "Miles Briggs MSP", details: "(Scottish Conservatives)"},
-      {name: "Ben Macpherson MSP", details: "(SNP)"},
-      { name: 'Andy Williamson', details: '(LibDems)'},
-      {name: "Ethan Claridge", details: "Chair"},
+      { name: "Miles Briggs MSP", details: "(Scottish Conservatives)" },
+      { name: "Ben Macpherson MSP", details: "(SNP)" },
+      { name: 'Andy Williamson', details: '(LibDems)' },
+      { name: "Ethan Claridge", details: "Chair" },
       { name: 'Brian Baglow', details: 'Level Up Scotland, National Games Strategy' },
-      { name: 'Professor Fiona McNeill', details: 'Edinburgh University'},
-      { name: 'Professor Marion Thain', details: 'Edinburgh Futures Institute'}
+      { name: 'Professor Fiona McNeill', details: 'Edinburgh University' },
+      { name: 'Professor Marion Thain', details: 'Edinburgh Futures Institute' }
     ],
     speakers_notes: '',
   },
@@ -62,8 +62,8 @@ The event will bring together politicians and experts to discuss digital media, 
     speakers: [
       { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' }
     ],
-  rsvpUrl: 'https://www.meetup.com/techmeetup/events/313769073/',
-  livestream: '',
+    rsvpUrl: 'https://www.meetup.com/techmeetup/events/313769073/',
+    livestream: '',
   },
   {
     id: 4,
@@ -78,9 +78,9 @@ The event will bring together politicians and experts to discuss digital media, 
     speakers: [
       { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' }
     ],
-  speakers_notes: 'Other speakers tbc',
-  rsvpUrl: 'https://luma.com/i67xapci',
-  livestream: '',
+    speakers_notes: 'Other speakers tbc',
+    rsvpUrl: 'https://luma.com/i67xapci',
+    livestream: '',
   },
   {
     id: 5,
@@ -122,6 +122,10 @@ This event will look at building a more resilient, responsive Wales — one that
       `Every time you pass a law, you get a computer system. The Scottish Parliament is 25 years old, born at the same time as the modern internet age. It wasn't designed to give birth to digital systems, but it does. It's time to take stock and see what changes are needed to make Scotland the leading digital state in the world.`,
     rsvpUrl: '',
     livestream: '',
+    speakers: [
+      { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' },
+      { name: "Ann Kempster", details: 'Transform Wales' },
+    ]
   },
   {
     id: 8,
