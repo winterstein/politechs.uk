@@ -36,6 +36,7 @@ export default [
   { name: 'Paul Reilly', description: 'Academic specialising in social media and contentious politics, digital activism and peacebuilding' },
   { name: 'Simon Roberts', description: 'Data specialist, Scottish Local Government' },
   { name: 'Edward Saperia', description: 'Dean of the London College of Political Technology' },
+  { name: "Daniel Shorr", description: "Founder and CEO of AI startup"},
   { name: 'Craig Somerville', description: 'Founder at a SaaS AI company and TechScaler founder' },
   { name: 'Mark Sutherland', description: 'Senior Software Engineer working in Digital Communications Technologies' },
   { name: 'John McTernan', description: 'Political strategist' },
