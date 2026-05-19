@@ -24,7 +24,7 @@ title: Photos — National Conversations
         {% endif %}
               <a href="/photos/{{ photo.id }}/" class="photo-thumbnail-link">
                 <div class="photo-thumbnail">
-                  <img src="{{ photo.url }}" alt="{{ photo.eventTitle }} - {{ photo.location }}" class="photo-thumbnail-image" loading="lazy">
+                  <img src="/images/thumbnails/{{ photo.galleryOrder }}/{{ photo.filename }}" alt="{{ photo.eventTitle }} - {{ photo.location }}" class="photo-thumbnail-image" loading="lazy">
                 </div>
               </a>
       {% endfor %}
