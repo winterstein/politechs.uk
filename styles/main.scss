@@ -195,6 +195,23 @@ a {
 }
 
 // =========================================
+// Pledge Content
+// =========================================
+
+.pledge-content {
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: $text-dark;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// =========================================
 // Event Cards
 // =========================================
 
