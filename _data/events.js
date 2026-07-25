@@ -101,7 +101,7 @@ The event will bring together politicians and experts to discuss digital media, 
     date: 'tbc',
     time: '',
     location: 'Cardiff tbc',
-    type: "pre-election",
+    type: "post-election",
     organised_with: 'Transform Gov Talks',
     description:
       `Public services in Wales are being held back by outdated systems, fragmented leadership and short-term fixes. People are frustrated. Trust is eroding. And the potential of our nation is being wasted.
