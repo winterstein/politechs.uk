@@ -98,7 +98,7 @@ The event will bring together politicians and experts to discuss digital media, 
   {
     id: 6,
     title: 'The state and public sector',
-    date: 'Thursday 17th September',
+    date: '2026-09-17',
     time: '',
     location: 'The Bike Lock, Cardiff',
     type: "post-election",
@@ -113,13 +113,13 @@ This event will look at building a more resilient, responsive Wales — one that
   {
     id: 7,
     title: 'The state and public sector',
-    date: '22nd September 2026',
+    date: '2026-09-22',
     time: '6pm',
     location: 'Burns Room, Scottish Parliament',
     type: "post-election",
     organised_with: 'Transform Gov Talks',
     description:
-      `Every time you pass a law, you get a computer system. The Scottish Parliament is 25 years old, born at the same time as the modern internet age. It wasn't designed to give birth to digital systems, but it does. It's time to take stock and see what changes are needed to make Scotland the leading digital state in the world.`,
+      `Every time you pass a law, you get a computer system. The Scottish Parliament is 25 years old, born at the same time as the modern internet age. It wasn't designed to give birth to digital systems, but it does. It's time to take stock and see what changes are needed to make Scotland the leading digital state in the world. This event is hybrid. In-person is invite only, but you can sign up for the livestream.`,
     rsvpUrl: 'https://luma.com/a9ubumzh',
     livestream: '',
     speakers: [
