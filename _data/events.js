@@ -120,7 +120,7 @@ This event will look at building a more resilient, responsive Wales — one that
     organised_with: 'Transform Gov Talks',
     description:
       `Every time you pass a law, you get a computer system. The Scottish Parliament is 25 years old, born at the same time as the modern internet age. It wasn't designed to give birth to digital systems, but it does. It's time to take stock and see what changes are needed to make Scotland the leading digital state in the world.`,
-    rsvpUrl: '',
+    rsvpUrl: 'https://luma.com/a9ubumzh',
     livestream: '',
     speakers: [
       { name: 'Gordon Guthrie', details: 'Foundations of the Digital State' },
@@ -136,7 +136,7 @@ This event will look at building a more resilient, responsive Wales — one that
     type: "post-election",
     organised_with: '',
     description:
-      ` JK Galbraith said of a particular day during the great crash of 1929 that "the end had arrived but was not yet visible". So it is with Silicon Valley. Trump took $10bn of the $14bn price of TikTok in its recent takeover. Hegseth threatened Anthropic with the Defense Production Act if they didn't comply with his wishes. This invitation only Chatham House seminar will explore the post-SV world with practitioners and politicians who have built economic and security models around the continued puissance of Sand Hill Road.`,
+      `JK Galbraith said of a particular day during the great crash of 1929 that "the end had arrived but was not yet visible". So it is with Silicon Valley. Trump took $10bn of the $14bn price of TikTok in its recent takeover. Hegseth threatened Anthropic with the Defense Production Act if they didn't comply with his wishes. This invitation only Chatham House seminar will explore the post-SV world with practitioners and politicians who have built economic and security models around the continued puissance of Sand Hill Road.`,
     rsvpUrl: '',
     livestream: '',
   },
