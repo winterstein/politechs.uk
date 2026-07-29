@@ -98,9 +98,9 @@ The event will bring together politicians and experts to discuss digital media, 
   {
     id: 6,
     title: 'The state and public sector',
-    date: 'tbc',
+    date: 'Thursday 17th September',
     time: '',
-    location: 'Cardiff tbc',
+    location: 'The Bike Lock, Cardiff',
     type: "post-election",
     organised_with: 'Transform Gov Talks',
     description:
@@ -113,9 +113,9 @@ This event will look at building a more resilient, responsive Wales — one that
   {
     id: 7,
     title: 'The state and public sector',
-    date: 'tbc',
-    time: '',
-    location: 'Edinburgh tbc',
+    date: '22nd September 2026',
+    time: '6pm',
+    location: 'Burns Room, Scottish Parliament',
     type: "post-election",
     organised_with: 'Transform Gov Talks',
     description:
