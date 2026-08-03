@@ -99,7 +99,7 @@ The event will bring together politicians and experts to discuss digital media, 
     id: 6,
     title: 'The state and public sector',
     date: '2026-09-17',
-    time: '',
+    time: '6pm',
     location: 'The Bike Lock, Cardiff',
     type: "post-election",
     organised_with: 'Transform Gov Talks',
@@ -107,7 +107,7 @@ The event will bring together politicians and experts to discuss digital media, 
       `Public services in Wales are being held back by outdated systems, fragmented leadership and short-term fixes. People are frustrated. Trust is eroding. And the potential of our nation is being wasted.
 
 This event will look at building a more resilient, responsive Wales — one that works for everyone, for generations to come.`,
-    rsvpUrl: '',
+    rsvpUrl: 'https://luma.com/gaq6niit',
     livestream: '',
   },
   {
